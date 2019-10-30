@@ -1,0 +1,66 @@
+/* reset css*/
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    font-family: verdana, arial, sans-serifs;
+    font-size: 62.5%;
+}
+#strona {
+    width: 90%;
+    border: solid 3px slategray;
+    margin: 0 auto 0 auto;
+}
+
+/* układ strony */
+header {
+    height: 150px;
+    background: orangered;
+
+}
+footer{
+    height: 20px;
+    background: orangered;
+}
+
+nav{float:left;
+width: 19%;
+background: blue;
+padding: 0px 0.5% 0px 0.5%;}
+article{float:left;
+    width: 52%;
+    background: red;
+padding: 0.2% 1.5% 0.2% 1.5%;}
+aside{float:left;
+    width: 22.5%;
+    background: #ff44d7;
+padding: 0.2% 0.1% 0.2% 1.5%;}
+.enter {clear: both}
+
+@media screen and (min-width: 480px) and (max-width: 1024px)  {
+    aside {display:none;}
+    article {width: 75%}
+}
+
+/*nawigacja*/
+nav ul a {
+    display: block;
+    border: solid 2px #d9ff46;
+    text-align: center;
+    text-decoration: none;
+    color: #77b304;
+    background: green;
+    padding: 5px;
+    margin: 5px;
+}
+
+nav ul a {
+    background: url("nav.png") no-repeat;
+    background-position: 0.2px;
+}
+nav ul a {
+    background-color: #ff0b86;
+    background-position: 3px 50%;
+}
