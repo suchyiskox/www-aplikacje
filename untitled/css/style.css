@@ -1,0 +1,230 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #f5f6f7;
+}
+
+body {
+    font-family: Arial;
+    color: black;
+}
+
+#strona {
+    width: 100%;
+    border: none;
+    margin: 0px auto 30px auto;
+
+}
+
+
+/*Układ strony*/
+
+header {
+    height: 200px;
+    text-align: center;
+    font-size: 2em;
+    background: #5b8007 url("../images/dwa.png") no-repeat;
+    width: 100%;
+
+}
+
+footer {
+    height: 170px;
+    font-size: 1em;
+    text-align: left;
+    background: #f5f6f7;
+    width: 100%;
+    padding: 0.1% 1.5% 0.2% auto;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+footer table tbody tr td a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+article {
+
+    text-align: left;
+    width: 90%;
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+h1 {
+    font-size: 1.8em;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+    background: transparent;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+    background: transparent;
+}
+
+h3 {
+    text-align: center;
+    color: forestgreen;
+    margin: 30px 0 50px;
+}
+
+.gallery {
+    margin: 10px 50px;
+}
+
+.gallery img {
+    width: 230px;
+    padding: 5px;
+    filter: grayscale(100%);
+    transition: 1s;
+}
+
+.gallery img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+aside {
+    float: left;
+    width: 27%;
+    background: #f2d8ff;
+}
+
+
+.enter {
+    clear: both;
+}
+
+@media screen and (min-width: 480px) and (max-width: 600px) {
+    aside {
+        display: none;
+    }
+
+    article {
+        width: 72%
+    }
+}
+
+/*navigacja*/
+
+div.top {
+    float: left;
+    width: 100%;
+
+
+}
+
+nav.top ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+nav.top ul li {
+    float: left;
+    width: 200px;
+    height: 40px;
+    background-color: black;
+    opacity: .8;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+
+nav.top ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+nav.top ul li a:hover {
+    background-color: green;
+}
+
+nav.top ul li ul li {
+    display: none;
+}
+
+nav.top ul li:hover ul li {
+    display: block;
+}
+
+article.ja img {
+    float: right;
+    text-align: left;
+    width: 25%;
+    border: 3px solid #FF9900;
+    margin: 0 auto 0 auto;
+
+
+    padding: auto auto auto auto;
+}
+
+article.ja img.svg {
+    float: left;
+    border: none;
+}
+
+.formField {
+    font: inherit;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: 3px 0 10px 0;
+    padding: 3px 0
+}
+
+textarea.formField {
+    width: 300px;
+    height: 70px
+}
+
+#sendBtn {
+    cursor: pointer;
+    background: #ccc;
+    background: linear-gradient(#ddd 0, #eee 100%);
+    border: 1px solid #ccc;
+    line-height: 32px;
+    font-size: 14px;
+    padding: 0 25px;
+    border-radius: 3px
+}
+
+#send_form_status {
+    border: 1px dashed #ccc;
+    display: none;
+    padding: 0 10px;
+    margin: 10px 0
+}
+
+.status_ok {
+    color: #060
+}
+
+.status_err {
+    color: #F00
+}
+
+label {
+    width: 150px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 6px;
+}
