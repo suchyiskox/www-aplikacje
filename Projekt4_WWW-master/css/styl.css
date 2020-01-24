@@ -1,0 +1,77 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol,
+ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+.grid-container {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.75fr 0.5fr 0.5fr 4fr 0.5fr;
+    background: white;
+}
+
+.item {
+    border: 1px solid black;
+}
+
+.logo {
+    grid-column: 1/end;
+    grid-row: 1/2;
+}
+
+.nawigacja {
+    grid-column: 1/end;
+    grid-row: 2/3;
+}
+
+.nawigacja2{
+    grid-column: 1/end;
+    grid-row: 3/4;
+    border-bottom: 2px solid black;
+}
+
+.stopka {
+    grid-column: 1/end;
+    grid-row: 5/6;
+    background: #191919;
+    border-top: 2px solid black
+}
+
+.menu {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.menu li {
+    display: inline-block;
+    justify-self: center;
+    margin-top: 10px;
+}
+
+.menu2{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.menu2 li {
+    display: inline-block;
+    justify-self: center;
+    margin-top: 10px;
+}
+
+.meni{
+    grid-column: 2/4;
+    grid-row: 4/5;
+    place-self: center stretch;
+}
